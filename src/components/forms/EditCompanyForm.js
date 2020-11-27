@@ -9,7 +9,6 @@ const EditCompanyForm = props => {
         () => { setCompany(props.currentCompany) },
         [ props ]
     )
-    // You can tell React to skip applying an effect if certain values haven’t changed between re-renders. [ props ]
 
     const handleChange = e => {
         const { name, value } = e.target
@@ -32,7 +31,7 @@ const EditCompanyForm = props => {
         <input type="text" name="street" value={company.street} onChange={handleChange} />
         <br />
         <button>Update company</button> 
-        <button onClick={() => setEditing(false)} className="button muted-button">
+        <button onClick={() => setEditing(false)}>
             Cancel
         </button>
         </form>

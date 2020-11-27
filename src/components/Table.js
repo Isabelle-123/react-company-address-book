@@ -20,8 +20,8 @@ const Table = (props) => {
                     <td>{company.name}</td>
                     <td>{company.street}</td>
                     <td>
-                    <button className="button muted-button" onClick={() => editCompany(company)}>Edit</button>
-                    <button className="button muted-button" onClick={() => deleteCompany(company.id)}>Delete</button>
+                    <button onClick={() => editCompany(company)}>Edit</button>
+                    <button onClick={() => deleteCompany(company.id)}>Delete</button>
                     </td>
                 </tr>
                 ))
