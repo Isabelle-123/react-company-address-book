@@ -25,10 +25,12 @@ const EditCompanyForm = props => {
             updateCompany(company.id, company)
         }}
         >
-        <label>Name</label>
+        <label>Name: </label>
         <input type="text" name="name" value={company.name} onChange={handleChange} />
-        <label>Street</label>
+        <br />
+        <label>Address: </label>
         <input type="text" name="street" value={company.street} onChange={handleChange} />
+        <br />
         <button>Update company</button> 
         <button onClick={() => setEditing(false)} className="button muted-button">
             Cancel
