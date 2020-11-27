@@ -9,7 +9,7 @@ const Table = (props) => {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Street</th>
+            <th>Address</th>
             <th>Actions</th>
           </tr>
         </thead>

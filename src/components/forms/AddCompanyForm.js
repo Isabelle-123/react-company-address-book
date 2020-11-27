@@ -16,10 +16,12 @@ const AddCompanyForm = (props) => {
                 addCompany(company)
                 setCompany(initialState)
           }}>
-        <label>Name</label>
+        <label>Name: </label> 
         <input type="text" name="name" value={company.name} onChange={handleChange} />
-        <label>street</label>
+        <br />  
+        <label>Address: </label>
         <input type="text" name="street" value={company.street} onChange={handleChange}/>
+        <br />  
         <button>Add new company</button>
         </form>
     )
