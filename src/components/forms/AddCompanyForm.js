@@ -13,7 +13,6 @@ const AddCompanyForm = (props) => {
     return (
         <form onSubmit={(e) => {
             e.preventDefault()
-            // if (!company.name || !company.street) 
                 addCompany(company)
                 setCompany(initialState)
           }}>
