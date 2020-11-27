@@ -1,12 +1,6 @@
 # Company Address Book
 
-An simple app too add company addresses.
-
-## 🦄 Tech stack
-
-- React (functional components)
-- CSS
-- uuid
+An simple app too add company addresses. Made with React (functional components)
 
 ## 🧪 Try it
 
