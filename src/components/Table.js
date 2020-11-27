@@ -9,7 +9,7 @@ const Table = (props) => {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Username</th>
+            <th>Street</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -18,7 +18,7 @@ const Table = (props) => {
                 companies.map(company => (
                 <tr key={company.id}>
                     <td>{company.name}</td>
-                    <td>{company.username}</td>
+                    <td>{company.street}</td>
                     <td>
                     <button className="button muted-button" onClick={() => editCompany(company)}>Edit</button>
                     <button className="button muted-button" onClick={() => deleteCompany(company.id)}>Delete</button>

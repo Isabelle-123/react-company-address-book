@@ -27,9 +27,9 @@ const EditCompanyForm = props => {
         >
         <label>Name</label>
         <input type="text" name="name" value={company.name} onChange={handleChange} />
-        <label>Username</label>
-        <input type="text" name="username" value={company.username} onChange={handleChange} />
-        <button>Update user</button>
+        <label>Street</label>
+        <input type="text" name="street" value={company.street} onChange={handleChange} />
+        <button>Update company</button> 
         <button onClick={() => setEditing(false)} className="button muted-button">
             Cancel
         </button>

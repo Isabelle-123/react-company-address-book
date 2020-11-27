@@ -6,12 +6,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 const App = () => {
   const companyData = [
-    { id: 1, name: 'Tromb', street: 'floppydiskette', postnumber: 12345, postadress: 'Stockholm' },
-    { id: 1, name: 'Tromb', street: 'floppydiskette', postnumber: 12345, postadress: 'Stockholm' },
-    { id: 1, name: 'Tromb', street: 'floppydiskette', postnumber: 12345, postadress: 'Stockholm' },
+    { id: 1, name: 'Tromb1', street: 'Parkv 15' },
+    { id: 2, name: 'Tromb2', street: 'Parkv 15' },
+    { id: 3, name: 'Tromb3', street: 'Parkv 15' },
   ]
 
-  const initialFormState = { id: null, name: '', company: '' }
+  const initialFormState = { id: null, name: '', street: '' }
 
   const [companies, setCompanies] = useState(companyData)
   const [editing, setEditing] = useState(false)
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>CRUD App with Hooks</h1>
+      <h1>Company address book</h1>
       <div className="flex-row">
         <div className="flex-large">
           {editing ? 
@@ -61,7 +61,6 @@ const App = () => {
         <div className="flex-large">
           <h2>View company</h2>
           <Table companies={companies} deleteCompany={deleteCompany} editCompany={editCompany}/>
-
         </div>
       </div>
     </div>
