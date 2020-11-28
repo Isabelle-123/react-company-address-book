@@ -9,8 +9,9 @@ const Table = (props) => {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Address</th>
-            <th>Actions</th>
+            <th>Street address</th>
+            <th>Post address</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@ const Table = (props) => {
                 <tr key={company.id}>
                     <td>{company.name}</td>
                     <td>{company.street}</td>
+                    <td>{company.post}</td>
                     <td>
                     <button onClick={() => editCompany(company)}>Edit</button>
                     <button onClick={() => deleteCompany(company.id)}>Delete</button>
@@ -27,7 +29,7 @@ const Table = (props) => {
                 ))
             :
                 <tr>
-                    <td colSpan={3}>No companies</td>
+                    <td colSpan={3}>No companies added</td>
                 </tr>
             }
 

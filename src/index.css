@@ -1,7 +1,62 @@
-td {
-	padding: 3vw;
+body {
+	padding-left: 1vw;
+}
+
+h1 {
+	font-size: 3vw;
+}
+
+h2 {
+	font-size: 2vw;
+}
+
+td,
+th {
+	padding: 10px;
+	font-size: 1.5vw;
+	text-align: left;
 }
 
 input {
 	margin: 1vw;
+	font-size: 1vw;
+}
+
+input {
+	width: 50%;
+	padding: 10px;
+}
+
+button {
+	margin: 5px;
+	font-size: 1vw;
+}
+
+@media screen and (max-width: 601px) {
+	h1 {
+		font-size: 5vw;
+	}
+
+	h2 {
+		font-size: 4vw;
+	}
+
+	td,
+	th {
+		padding: 0px 5px 0px 0px;
+		font-size: 4vw;
+		text-align: left;
+	}
+
+	input {
+		width: 80%;
+		padding: 5px;
+		font-size: 3vw;
+	}
+
+	button {
+		margin: 2px;
+		padding: 1px;
+		font-size: 3vw;
+	}
 }

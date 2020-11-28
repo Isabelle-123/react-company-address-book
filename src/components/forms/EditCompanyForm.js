@@ -20,15 +20,14 @@ const EditCompanyForm = props => {
         <form
         onSubmit={e => {
             e.preventDefault()
-
             updateCompany(company.id, company)
         }}
         >
-        <label>Name: </label>
         <input type="text" name="name" value={company.name} onChange={handleChange} />
         <br />
-        <label>Address: </label>
         <input type="text" name="street" value={company.street} onChange={handleChange} />
+        <br />
+        <input type="text" name="post" value={company.post} onChange={handleChange} />
         <br />
         <button>Update company</button> 
         <button onClick={() => setEditing(false)}>

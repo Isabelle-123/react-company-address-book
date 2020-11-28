@@ -6,16 +6,17 @@ import { v4 as uuidv4 } from 'uuid';
 
 const App = () => {
   const companyData = [
-    { id: 1, name: 'Tromb1', street: 'Parkv 15' },
-    { id: 2, name: 'Tromb2', street: 'Parkv 15' },
-    { id: 3, name: 'Tromb3', street: 'Parkv 15' },
+    { id: 1, name: 'MyCompany', street: 'Parkv 15', post: '12345 Stockholm'},
+    { id: 2, name: 'AnotherCompany', street: 'Parkv 15', post: '12345 Stockholm'},
+    { id: 3, name: 'OneMoreCompany', street: 'Parkv 15', post: '12345 Stockholm'},
   ]
 
-  const initialFormState = { id: null, name: '', street: '' }
+  const initialFormState = { id: null, name: '', street: '', post: '' }
 
   const [companies, setCompanies] = useState(companyData)
   const [editing, setEditing] = useState(false)
   const [currentCompany, setCurrentCompany] = useState(initialFormState)
+
   
   const addCompany = (company) => {
     company.id = uuidv4()
@@ -28,7 +29,7 @@ const App = () => {
 
   const editCompany = (company) => {
     setEditing(true)
-    setCurrentCompany({ id: company.id, name: company.name, street: company.street })
+    setCurrentCompany({ id: company.id, name: company.name, street: company.street, post: company.post })
   }
 
   const updateCompany = (id, updatedCompany) => {
@@ -59,8 +60,8 @@ const App = () => {
           }
         </div>
         <div className="flex-large">
-          <h2>View company</h2>
-          <Table companies={companies} deleteCompany={deleteCompany} editCompany={editCompany}/>
+          <h2>Company addresses</h2>
+          <Table companies={companies} deleteCompany={deleteCompany} editCompany={editCompany} />
         </div>
       </div>
     </div>
