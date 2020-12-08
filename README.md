@@ -1,6 +1,6 @@
 # Company Address Book
 
-An simple app too add company addresses. Made with React (functional components)
+An simple app too add company addresses. Made with React (functional components).
 
 ## 🧪 Try it
 
